@@ -10,8 +10,31 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-
+    
     <p> Lets Build a Great Site! </p>
+    <div class="col-md-4 pic-nav-wrapper navigation-card">
+        <div id="myinfo-photo-wrapper" class="user-photo-wrapper mx-auto">
+            <img class="img-fluid user-photo border-right border-bottom" src="/sio/mpa/secure/imgservice/myphoto/myphoto.jpeg" alt="ID Card Photo">
+            <div class="user-info-box">
+                <div class="user-name-box p-2 d-inline-block">Rozay Chen</div>
+                <a class="float-right p-2" href="http://www.cmu.edu/idplus/idphotos/index.html" target="_blank">
+                    <span style="color:#fff" aria-hidden="true" class="fas fa-lg fa-camera fa-fw"></span>
+                    <span class="sr-only">Link to CMU ID Photo submission page.</span>
+                </a>
+            </div>
+        </div>
+        
+        <nav role="navigation" aria-label="View My Information Sub Menu">
+            <ul class="nav nav-tabs flex-column d-flex fa-ul m-0 ">
+                <li class="nav-item d-flex active ">
+                    <a href="/sio/mpa/myinfo/personalinfo" id="nav-item-personalinfo" class="nav-link w-100   ">
+                        <span class="fa-li"><span aria-hidden="true" class="fas fa-fw fa-folder-open"></span></span>
+                        Personal Information
+                    </a>
+                </li>  
+            </ul>
+        </nav>
+    </div>
 
     <script type="text/javascript" src="interactions.js"></script>    <!-- Insert JQuery Script -->
 
