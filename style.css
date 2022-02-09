@@ -47,3 +47,17 @@
     color: rgb(var(--color_15));
     letter-spacing: 0em;
 }
+#body{
+    --bg: 255,255,255;
+    --shd: none;
+    --brwt: 0px;
+    --brd: var(--color_12);
+    --brwb: 0px;
+    --bgctr: 255,255,255;
+    --rd: 0px;
+    --alpha-bg: 1;
+    --alpha-bgctr: 0;
+    --alpha-brd: 1;
+    --boxShadowToggleOn-shd: none;
+    --shc-mutated-brightness: 128,128,128;
+}
