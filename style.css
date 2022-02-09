@@ -1,0 +1,49 @@
+.top-header {
+    font-size: 14px;
+    color: #fff;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+#header {
+    --bg: 255,255,255;
+    --shd: none;
+    --brwt: 0px;
+    --brd: var(--color_12);
+    --brwb: 0px;
+    --bgctr: 255,255,255;
+    --rd: 0px;
+    --alpha-bg: 1;
+    --alpha-bgctr: 0;
+    --alpha-brd: 1;
+    --boxShadowToggleOn-shd: none;
+    --shc-mutated-brightness: 128,128,128;
+    position: fixed !important;
+    top: 0;
+}
+#header {
+    left: 0;
+    margin-left: 0;
+    width: 100%;
+    min-width: 980px;
+    z-index: 51;
+    --above-all-in-container: 10000;
+}
+.header-container {
+    position: relative;
+    width: 100%;
+}
+#header-center {
+    width: 277px;
+    height: 40px;
+    position: relative;
+    margin: 27px 0px 10px calc((100% - 980px) * 0.5);
+    left: 346px;
+    grid-area: 1 / 1 / 2 / 2;
+    justify-self: start;
+    align-self: start;
+}
+.font_0 {
+    font: var(--font_0);
+    color: rgb(var(--color_15));
+    letter-spacing: 0em;
+}
