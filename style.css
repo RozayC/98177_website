@@ -61,3 +61,10 @@
     --boxShadowToggleOn-shd: none;
     --shc-mutated-brightness: 128,128,128;
 }
+#column {
+    --bg-overlay-color: rgb(var(--color_11));
+    --bg-gradient: none;
+    width: 100%;
+    --column-width: 431px;
+    --column-flex: 431;
+}
