@@ -28,6 +28,9 @@
     z-index: 51;
     --above-all-in-container: 10000;
 }
+#header-placeholder {
+    height: 60px;
+}
 .header-container {
     position: relative;
     width: 100%;
@@ -52,7 +55,6 @@
     margin-left: 0;
     width: 100%;
     min-width: 980px;
-    top: 40px;
     --pinned-layer-in-container: 52;
     --above-all-in-container: 49;
     --bg: 255,255,255;
@@ -74,4 +76,7 @@
     width: 100%;
     --column-width: 431px;
     --column-flex: 431;
+}
+#Page_container {
+    position: relative;
 }
