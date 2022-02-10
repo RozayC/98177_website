@@ -11,6 +11,178 @@
     <link href="//db.onlinewebfonts.com/c/6dd2f2510b4a00a5461b2455928209c2?family=BrandonGrotW01-Light" rel="stylesheet" type="text/css"/>
 </head>
 <body>
+    <!-- STYLE -->
+    <style type="text/css">
+        @import url(//db.onlinewebfonts.com/c/6dd2f2510b4a00a5461b2455928209c2?family=BrandonGrotW01-Light);
+        .top-header {
+            font-size: 14px;
+            color: #fff;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        #header {
+            --bg: 255,255,255;
+            --shd: none;
+            --brwt: 0px;
+            --brd: var(--color_12);
+            --brwb: 0px;
+            --bgctr: 255,255,255;
+            --rd: 0px;
+            --alpha-bg: 1;
+            --alpha-bgctr: 0;
+            --alpha-brd: 1;
+            --boxShadowToggleOn-shd: none;
+            --shc-mutated-brightness: 128,128,128;
+            position: fixed !important;
+            top: 0;
+            background: rgb(0, 0, 0);
+            left: 0;
+            margin-left: 0;
+            width: 100%;
+            min-width: 980px;
+            z-index: 51;
+            --above-all-in-container: 10000;
+        }
+
+        #header-placeholder {
+            height: 60px;
+        }
+        .header-container {
+            position: relative;
+            width: 100%;
+        }
+        #header-center {
+            width: 277px;
+            height: 40px;
+            position: relative;
+            margin: 27px 0px 10px calc((100% - 980px) * 0.5);
+            left: 346px;
+            grid-area: 1 / 1 / 2 / 2;
+            justify-self: start;
+            align-self: start;
+        }
+        .font_0 {
+            font: var(--font_0);
+            color: rgb(var(--color_15));
+            letter-spacing: 0em;
+        }
+        #body{
+            left: 0;
+            margin-left: 0;
+            width: 100%;
+            min-width: 980px;
+            --pinned-layer-in-container: 52;
+            --above-all-in-container: 49;
+            --bg: 255,255,255;
+            --shd: none;
+            --brwt: 0px;
+            --brd: var(--color_12);
+            --brwb: 0px;
+            --bgctr: 255,255,255;
+            --rd: 0px;
+            --alpha-bg: 1;
+            --alpha-bgctr: 0;
+            --alpha-brd: 1;
+            --boxShadowToggleOn-shd: none;
+            --shc-mutated-brightness: 128,128,128;
+        }
+        #column {
+            --bg-overlay-color: rgb(var(--color_11));
+            --bg-gradient: none;
+            width: 100%;
+            --column-width: 431px;
+            --column-flex: 431;
+        }
+        #Page_container {
+            position: relative;
+        }
+
+
+        /* NAV BAR */
+
+        .nav-bar {
+            width: 100%;
+            height: 50px;
+            margin: 0;
+
+            /* Toggle between static and sticky */
+
+            /*position: sticky;
+            top: 0; */
+        }
+
+        .nav-bar > .element {
+            width: 7%;
+            line-height: 50px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            display: inline-block;
+            margin: 0;
+            font-size: 17px;
+            font-family: BrandonGrotW01-Light,sans-serif;
+            text-decoration: none;
+        }
+
+        .nav-bar > .logo {
+            width: 13%;
+            line-height: 50px;
+            text-align: Center;
+            color: rgb(255, 143, 143);
+            display: inline-block;
+            font-size: 23px;
+            margin: 0;
+            font-family: Papyrus,sans-serif;
+            text-decoration: none;
+        }
+        .nav-bar > .label {
+            width: 5%;
+            line-height: 50px;
+            text-align: Right;
+            color: rgb(255, 255, 255);
+            display: inline-block;
+            font-size: 17px;
+            font-family: BrandonGrotW01-Light,sans-serif;
+            text-decoration: none;
+        }
+
+        .nav-bar > .element:hover { 
+            color:rgb(140, 255, 207)
+        }
+        .nav-bar > .logo:hover { 
+            color:rgb(255, 255, 255)
+        }
+        .nav-bar > .label:hover { 
+            color:rgb(140, 255, 207)
+        }
+
+        /* for body */
+
+
+        #img {
+            width: 300px;
+            text-align: center;
+        }
+
+        .center {
+            width: 50%;
+            margin-left: 25%;
+        }
+
+        .center_img {
+            text-align: center;
+        }
+
+        .input_class {
+            width: 100%;
+            font-size: 12px;
+        }
+    </style>
+
+
+
+
+
+
     <script type="text/javascript" src="interactions.js"></script>    <!-- Insert JQuery Script -->
     <div class="Page_container"></div>
         <div id="header" class="ZW5SX">
