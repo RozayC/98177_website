@@ -1,4 +1,11 @@
 @import url(//db.onlinewebfonts.com/c/6dd2f2510b4a00a5461b2455928209c2?family=BrandonGrotW01-Light);
+
+@font-face {
+    font-family: "navfont";
+    src: url(//db.onlinewebfonts.com/c/6dd2f2510b4a00a5461b2455928209c2?family=BrandonGrotW01-Light);
+}
+
+
 .top-header {
     font-size: 14px;
     color: #fff;
@@ -104,7 +111,7 @@
     display: inline-block;
     margin: 0;
     font-size: 17px;
-    font-family: BrandonGrotW01-Light,sans-serif;
+    font-family: navfont,sans-serif;
     text-decoration: none;
 }
 
@@ -126,7 +133,7 @@
     color: rgb(255, 255, 255);
     display: inline-block;
     font-size: 17px;
-    font-family: BrandonGrotW01-Light,sans-serif;
+    font-family: navfont,sans-serif;
     text-decoration: none;
 }
 
