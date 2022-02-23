@@ -115,7 +115,7 @@
     display: inline-block;
     margin: 0;
     font-size: 17px;
-    font-family: BrandonGrotW01-Light,sans-serif;
+    font-family: BrandonGrotW01-Light;
     text-decoration: none;
 }
 
@@ -137,7 +137,7 @@
     color: rgb(255, 255, 255);
     display: inline-block;
     font-size: 17px;
-    font-family: BrandonGrotW01-Light,sans-serif;
+    font-family: BrandonGrotW01-Light;
     text-decoration: none;
 }
 
