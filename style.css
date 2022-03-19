@@ -12,7 +12,7 @@
 
 .top-header {
     font-size: 14px;
-    color: #fff;
+    color: rgb(245, 237, 237);
     padding-top: 0;
     padding-bottom: 0;
 }
@@ -31,7 +31,7 @@
     --shc-mutated-brightness: 128,128,128;
     position: fixed !important;
     top: 0;
-    background: rgb(0, 0, 0);
+    background: rgb(50, 57, 60);
     left: 0;
     margin-left: 0;
     width: 100%;
@@ -41,7 +41,7 @@
 }
 
 #header-placeholder {
-    height: 60px;
+    height: 70px;
 }
 .header-container {
     position: relative;
@@ -67,6 +67,7 @@
     margin-left: 0;
     width: 100%;
     min-width: 980px;
+    background:rgb(245, 237, 237);
     --pinned-layer-in-container: 52;
     --above-all-in-container: 49;
     --bg: 255,255,255;
@@ -98,7 +99,7 @@
 
 .nav-bar {
     width: 100%;
-    height: 50px;
+    height: 70px;
     margin: 0;
 
     /* Toggle between static and sticky */
@@ -111,9 +112,9 @@
     width: 7%;
     line-height: 50px;
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: rgb(245, 237, 237);
     display: inline-block;
-    margin: 0;
+    margin: 10px;
     font-size: 17px;
     font-family: BrandonGrotW01-Light;
     text-decoration: none;
@@ -123,7 +124,7 @@
     width: 13%;
     line-height: 50px;
     text-align: Center;
-    color: rgb(255, 143, 143);
+    color: rgb(229, 210, 206);
     display: inline-block;
     font-size: 23px;
     margin: 0;
@@ -134,7 +135,7 @@
     width: 5%;
     line-height: 50px;
     text-align: Right;
-    color: rgb(255, 255, 255);
+    color: rgb(245, 237, 237);
     display: inline-block;
     font-size: 17px;
     font-family: BrandonGrotW01-Light;
@@ -142,13 +143,13 @@
 }
 
 .nav-bar > .element:hover { 
-      color:rgb(140, 255, 207)
+      color:rgb(140, 152, 154)
 }
 .nav-bar > .logo:hover { 
-    color:rgb(255, 255, 255)
+    color:rgb(160, 130, 127)
 }
 .nav-bar > .label:hover { 
-    color:rgb(140, 255, 207)
+    color:rgb(140, 152, 154)
 }
 
 /* for body */
