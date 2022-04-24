@@ -66,8 +66,9 @@
     left: 0;
     margin-left: 0;
     width: 100%;
+    height:100%;
     min-width: 980px;
-    background:rgb(245, 237, 237);
+    background:rgba(255, 255, 255, 0);
     --pinned-layer-in-container: 52;
     --above-all-in-container: 49;
     --bg: 255,255,255;
@@ -92,6 +93,7 @@
 }
 #Page_container {
     position: relative;
+    background-color: rgba(240, 248, 255, 0);
 }
 
 
@@ -163,13 +165,132 @@
 .center {
     width: 50%;
     margin-left: 25%;
+    font-family: BrandonGrotW01-Light;
+}
+.center > .title{
+    margin-left: 0%;
+    text-align: center;
+    font-family: BrandonGrotW01-Light;
+    font-size: 25px;
 }
 
 .center_img {
     text-align: center;
 }
+/* input field */
+
+.left_half {
+    width: 100%;
+    margin-left: 0%;
+    display: inline-block;
+}
+.left_half > .image {
+    margin-left: 25%;
+}
+.left_half > .title {
+    width: 56%;
+    margin-left: 30%;
+    line-height: 25px;
+    text-align: justify;
+    color: rgb(0, 0, 0);
+    font-size: 26px;
+    font-family: BrandonGrotW01-Light;
+    text-decoration: none;
+}
+
+.left_half > .textbox {
+    width: 55%;
+    margin-left: 30%;
+    line-height: 20px;
+    text-align: justify;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-family: BrandonGrotW01-Light;
+    text-decoration: none;
+}
+.right_half {
+    width: 100%;
+    margin-left: 0%;
+    display: inline-block;
+}
+.right_half > .image {
+    margin-left: 15%;
+}
+.right_half > .title {
+    width: 56%;
+    margin-left: 20%;
+    line-height: 25px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    font-size: 26px;
+    font-family: BrandonGrotW01-Light;
+    text-decoration: none;
+}
+
+.right_half > .textbox {
+    width: 56%;
+    margin-left: 20%;
+    line-height: 20px;
+    text-align: justify;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-family: BrandonGrotW01-Light;
+    text-decoration: none;
+}
+
 
 .input_class {
     width: 100%;
     font-size: 12px;
+}
+
+
+/* for the search bar */
+.searchbar {
+    width: 50%;
+    height: 35px;
+    margin-left: 0%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 35px;
+    font-size: 18px;
+    font-family: BrandonGrotW01-Light;
+    text-indent: 10px;
+    border-top: 0ch;
+    border-left: 0ch;
+    border-right: 0ch;
+
+}
+
+.projects {
+    width: 49%;
+    margin-left: 0%;
+    display: inline-block;
+}
+
+.projects > p {
+    margin-left: 0%;
+}
+.experience {
+    width: 49%;
+    margin-left: 0%;
+    display: inline-block;
+}
+
+.experience > p {
+    margin-left: 0%;
+}
+
+/* parallax */
+body, html {
+    margin: 0;
+    height: 100%;
+}
+.parallax-img {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

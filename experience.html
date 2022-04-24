@@ -11,7 +11,64 @@
     <link href="//db.onlinewebfonts.com/c/6dd2f2510b4a00a5461b2455928209c2?family=BrandonGrotW01-Light" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-    <script type="text/javascript" src="interactions.js"></script>    <!-- Insert JQuery Script -->
+    <script type="text/javascript">
+
+
+		function loadData(k) {
+
+			var lookup = k.toLowerCase();
+
+			//Load JSON
+			$.getJSON( 'projects.json', function( data ) {
+
+
+				//Turn off display of each element
+				$.each( data, function( key, val ) {
+
+					var sub_key = '.' + key;
+					$(sub_key).css('display', 'none');
+
+				});
+		  
+		  		//Turn on display of elements with matching keywords
+				$.each( data, function( key, val ) {
+					
+					for(var i = 0; i < val.length; i++)
+					{
+
+						console.log(lookup + " vs " + val[i]);
+
+						if( val[i].includes(lookup) )
+						{
+							var main_key = '.' + key;
+							$(main_key).css('display', 'block');
+						}
+					}
+
+				});
+
+			});
+
+		}
+
+
+		
+		$(document).ready(function(){
+
+		    $(".searchbar").keyup(function(event) {
+
+		        var k = $(this).val();
+
+		        console.log(k);
+
+		        loadData(k)
+
+		    });
+		});
+
+
+	</script>
+
     <div class="Page_container"></div>
         <div id="header" class="ZW5SX">
             <div class="header-container">
@@ -29,16 +86,40 @@
         </div>
     <div id="header-placeholder"></div>
     <div id="body">
-        <div class=center>
-            </div>
-            <p> Hi! This are my experiences. </p>
-            <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
-            <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
-            <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
-            <p> Why do you like popcorn? </p>
-            <input class=input_class type="text" name="input_field" placeholder="because it make's me happy...">
+        <div id= searchbar_container>
+            <img id=img src='picture/search_icon.png' style="width: 30px; height: auto; object-fit: cover; object-position: 50% 50%; margin-left: 20%; margin-top: 5px;">
+            <input class=searchbar type="text" placeholder="Search For a Project.." >
         </div>
-        <script type="text/javascript" src="interactions.js"></script>    <!-- Insert JQuery Script -->
+        
+        <div class = 'experience experience_1'>
+            <div class=left_half>
+                <div class=image>
+                    <img id=img src='picture/placeholder_image.png' style="width: 450px; height: auto; object-fit: cover; object-position: 50% 50%;">
+                </div>
+                <div class=title>
+                    <p>Experience 1</p>
+                </div>
+                <div class=textbox>
+                    <p> Hi! This is my Experience 1. </p>
+                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+                </div>
+            </div>
+        </div>
+        <div class = 'experience experience_2'>
+            <div class=right_half>
+
+                <div class=image>
+                    <img id=img src='picture/placeholder_image.png' style="width: 450px; height: auto; object-fit: cover; object-position: 50% 50%;">
+                </div>
+                <div class=title>
+                    <p>Experience 2</p>
+                </div>
+                <div class=textbox>
+                    <p> Hi! This is my Experience 2. </p>
+                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
