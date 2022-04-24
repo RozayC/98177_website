@@ -82,6 +82,7 @@
     --alpha-bgctr: 0;
     --alpha-brd: 1;
     --boxShadowToggleOn-shd: none;
+    font-family: BrandonGrotW01-Light;
     --shc-mutated-brightness: 128,128,128;
 }
 #column {
@@ -170,7 +171,6 @@
 .center > .title{
     margin-left: 0%;
     text-align: center;
-    font-family: BrandonGrotW01-Light;
     font-size: 25px;
 }
 
